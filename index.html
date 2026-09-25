@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Units for Layout</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <p>WEBD1003</p>
+    </header>
+
+    <main>
+        <!-- Step 4: vh. This banner fills the height of the browser window. -->
+        <section>
+            <h1>Relative Units for Layout</h1>
+            <p>This banner is sized with vh. Resize the browser window to see it change.</p>
+        </section>
+
+        <!-- Step 1: Fixed pixels vs percentages -->
+        <section>
+            <h2>1. Fixed Pixels vs Percentages</h2>
+
+            <h3>Fixed: 960px container, 480px boxes</h3>
+            <div>
+                <div class="box">480px</div>
+                <div class="box">480px</div>
+            </div>
+
+            <h3>Fluid: 100% container, 50% boxes</h3>
+            <div>
+                <div class="box">50%</div>
+                <div class="box">50%</div>
+            </div>
+        </section>
+
+        <!-- Step 2: Halves and thirds -->
+        <section>
+            <h2>2. Halves and Thirds</h2>
+
+            <h3>Halves</h3>
+            <div>
+                <div class="box">50%</div>
+                <div class="box">50%</div>
+            </div>
+
+            <h3>Thirds</h3>
+            <div>
+                <div class="box">33.33%</div>
+                <div class="box">33.33%</div>
+                <div class="box">33.33%</div>
+            </div>
+
+            <h3>Mixing: one third and two thirds</h3>
+            <div>
+                <div class="box">33.33%</div>
+                <div class="box">66.66%</div>
+            </div>
+        </section>
+
+        <!-- Step 2 (continued): Calculating a custom layout -->
+        <section>
+            <h2>3. Calculating a Custom Layout</h2>
+            <p>The design mockup is 960px wide. The sidebar is 240px and the content area is 720px.</p>
+            <p class="formula">target ÷ context × 100 = %</p>
+
+            <div>
+                <aside class="box">
+                    <p>Sidebar</p>
+                    <p>240 ÷ 960 × 100 = 25%</p>
+                </aside>
+                <article class="box">
+                    <p>Content</p>
+                    <p>720 ÷ 960 × 100 = 75%</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Step 3: vw -->
+        <section>
+            <h2>4. Viewport Width</h2>
+
+            <div class="box">width: 50%</div>
+            <div class="box">width: 50vw</div>
+        </section>
+    </main>
+</body>
+</html>

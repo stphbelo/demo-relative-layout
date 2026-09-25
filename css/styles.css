@@ -1,0 +1,11 @@
+/* Visual styling only, so we can see the size of each box element. */
+.box {
+    padding: 1rem;
+    background-color: aliceblue;
+    border: 2px solid royalblue;
+}
+
+.formula {
+    margin: 0.5rem 0 1rem;
+    font-weight: bold;
+}
